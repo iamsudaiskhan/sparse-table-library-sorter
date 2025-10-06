@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "description": "Schema for describing sparse table test runs.",
+  "properties": {
+    "nn": {
+      "description": "Array of n_k integers.",
+      "type": "array",
+      "items": {
+        "type": "integer"
+      }
+    },
+    "mm": {
+      "description": "Array of m_{k-1} real numbers.",
+      "type": "array",
+      "items": {
+        "type": "number"
+      }
+    },
+    "k": {
+      "description": "Integer indexing nn and mm.",
+      "type": "integer"
+    },
+    "x": {
+      "description": "Initial key to insert in the table.",
+      "type": "integer"
+    },
+    "actions": {
+      "type": "array",
+      "description": "List of actions to perform on the sparse table.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "string",
+            "enum": ["insert", "lookup", "delete"]
+          },
+          "key": {
+            "type": "number"
+          }
+        },
+        "required": ["action", "key"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["nn", "mm", "k", "x", "actions"],
+  "additionalProperties": false
+}

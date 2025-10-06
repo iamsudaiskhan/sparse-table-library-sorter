@@ -1,0 +1,88 @@
+{
+  "nn": [1, 2, 5, 10, 15],
+  "mm": [2, 2.5, 2, 1.5, 1.33],
+  "k": 1,
+  "x": 3,
+  "actions": [
+    {
+      "action": "insert",
+      "key": 5
+    },
+    {
+      "action": "insert",
+      "key": 6
+    },
+    {
+      "action": "insert",
+      "key": 3
+    },
+    {
+      "action": "insert",
+      "key": 4
+    },
+    {
+      "action": "insert",
+      "key": 10
+    },
+    {
+      "action": "insert",
+      "key": 8
+    },
+    {
+      "action": "insert",
+      "key": 7
+    },
+    {
+      "action": "lookup",
+      "key": 10
+    },
+    {
+      "action": "lookup",
+      "key": 15
+    },
+    {
+      "action": "lookup",
+      "key": 5
+    },                
+    {
+      "action": "lookup",
+      "key": 0
+    },            
+    {
+      "action": "delete",
+      "key": 3
+    },
+    {
+      "action": "delete",
+      "key": 10
+    },
+    {
+      "action": "delete",
+      "key": 10
+    },    
+    {
+      "action": "delete",
+      "key": 4
+    },
+    {
+      "action": "delete",
+      "key": 5
+    },
+    {
+      "action": "lookup",
+      "key": 6.5
+    },
+    {
+      "action": "lookup",
+      "key": 6
+    },    
+    {
+      "action": "delete",
+      "key": 6
+    },
+    {
+      "action": "delete",
+      "key": 7
+    }    
+  ]
+}
